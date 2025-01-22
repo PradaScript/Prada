@@ -1,0 +1,66 @@
+getgenv().PradaV2 = {
+    ['Key'] = "",
+
+    ['Triggerbot'] = {
+        ['Enabled'] = true,
+        ['Delay'] = 0.01,
+        ['Method'] = 'FOV', -- // Direct/FOV
+        ['FOV'] = {
+            ['Visible'] = false,
+            ['Size'] = 35,
+            ['FovMode'] = 'Circle', -- // Circle
+        },
+        ['Extra'] = {
+            ['KnifeBlacklist'] = true,
+            ['Option'] = 'Hold', -- // Hold/Toggle
+            ['Key'] = 'V',
+            ['UseMethod'] = 'Mouse' -- // Mouse/Weapon
+        },
+    },
+
+    ['Silent'] = {
+        ['Enabled'] = true,
+        ['Mode'] = 'FOV', -- // "FOV"
+        ['NearestCursorPoint'] = {
+            ['Enabled'] = true,
+            ['Mode'] = 'Default', -- // no other modes atm
+        },
+        ['Extra'] = {
+            ['VisCheck'] = true
+        },
+        ['FOV'] = {
+            ['Silent Aim'] = {
+                ['Visible'] = true,
+                ['Size'] = 555,
+                ['FovMode'] = 'Circle',
+            },
+        },
+        ['Thick Bullet'] = {
+            ['Enabled'] = false,
+            ['Size'] = {
+                ['X'] = 5,
+                ['Y'] = 5,
+                ['Z'] = 5,
+            },
+        },
+    },
+
+    ['Safety'] = {
+        ['Mod Protection'] = {
+            ['Enabled'] = true,
+            ['Method'] = 'Notify' -- // Kick/Notify
+        },
+    },
+    
+    ['Movement Enhancements'] = {
+        ['Enabled'] = true,
+        ['Speed'] = {
+            ['Multiplier'] = 15
+        },
+        ['SpeedKeybind'] = {
+            ['Bind'] = 'P',
+        },
+    },
+}
+--
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7bc6482e48bf000b87dfc10f0d0d48e3.lua"))()
