@@ -63,4 +63,4 @@ getgenv().PradaV2 = {
     },
 }
 --
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7bc6482e48bf000b87dfc10f0d0d48e3.lua"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/6589dgW5"))()
