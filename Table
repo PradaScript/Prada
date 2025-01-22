@@ -30,7 +30,7 @@ getgenv().PradaV2 = {
         ['FOV'] = {
             ['Silent Aim'] = {
                 ['Visible'] = true,
-                ['Size'] = 555,
+                ['Size'] = 55,
                 ['FovMode'] = 'Circle',
             },
         },
@@ -48,6 +48,16 @@ getgenv().PradaV2 = {
         ['Mod Protection'] = {
             ['Enabled'] = true,
             ['Method'] = 'Notify' -- // Kick/Notify
+        },
+        
+        ['Movement Enhancements'] = {
+            ['Enabled'] = true,
+            ['Speed'] = {
+                ['Multiplier'] = 15
+            },
+            ['SpeedKeybind'] = {
+                ['Bind'] = 'P',
+            },
         },
     },
 }
