@@ -6,8 +6,8 @@ getgenv().PradaV2 = {
         ['Delay'] = 0.01,
         ['FOV'] = {
             ['Visible'] = true,
-            ['Size'] = 55,
-            ['FovMode'] = 'Circle', -- // Direct/Circle
+            ['Size'] = 35,
+            ['FovMode'] = 'Circle', -- // Circle/Direct 
         },
         ['Extra'] = {
             ['KnifeBlacklist'] = true,
@@ -48,16 +48,6 @@ getgenv().PradaV2 = {
         ['Mod Protection'] = {
             ['Enabled'] = true,
             ['Method'] = 'Notify' -- // Kick/Notify
-        },
-    },
-    
-    ['Movement Enhancements'] = {
-        ['Enabled'] = true,
-        ['Speed'] = {
-            ['Multiplier'] = 15
-        },
-        ['SpeedKeybind'] = {
-            ['Bind'] = 'P',
         },
     },
 }
