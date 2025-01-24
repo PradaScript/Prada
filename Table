@@ -1,12 +1,13 @@
 getgenv().PradaV2 = {
     ['Key'] = "",
+    
     ['Triggerbot'] = {
         ['Enabled'] = true,
         ['Delay'] = 0.01,
         ['FOV'] = {
             ['Visible'] = false,
-            ['Size'] = 35,
-            ['FovMode'] = 'Direct', -- // fov circle will be added soon
+            ['Size'] = 555,
+            ['FovMode'] = 'FOV', -- Direct/FOV
         },
         ['Extra'] = {
             ['KnifeBlacklist'] = true,
@@ -62,6 +63,7 @@ getgenv().PradaV2 = {
             ['Method'] = 'Notify'
         },
     },
+    
     ['Movement Enhancements'] = {
         ['Speed'] = {
             ['Value'] = 5,
