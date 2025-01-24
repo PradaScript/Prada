@@ -1,28 +1,27 @@
 getgenv().PradaV2 = {
     ['Key'] = "",
-
     ['Triggerbot'] = {
         ['Enabled'] = true,
         ['Delay'] = 0.01,
         ['FOV'] = {
-            ['Visible'] = true,
+            ['Visible'] = false,
             ['Size'] = 35,
-            ['FovMode'] = 'Circle', -- // Circle/Direct 
+            ['FovMode'] = 'Direct', -- // fov circle will be added soon
         },
         ['Extra'] = {
             ['KnifeBlacklist'] = true,
-            ['Option'] = 'Hold', -- // Hold/Toggle
+            ['Option'] = 'Hold',
             ['Key'] = 'V',
-            ['UseMethod'] = 'Mouse' -- // Mouse/Weapon
+            ['UseMethod'] = 'Mouse'
         },
     },
 
     ['Silent'] = {
         ['Enabled'] = true,
-        ['Mode'] = 'FOV', -- // "FOV"
+        ['Mode'] = 'FOV',
         ['NearestCursorPoint'] = {
             ['Enabled'] = true,
-            ['Mode'] = 'Default', -- // no other modes atm
+            ['Mode'] = 'Default',
         },
         ['Extra'] = {
             ['VisCheck'] = true
@@ -30,7 +29,7 @@ getgenv().PradaV2 = {
         ['FOV'] = {
             ['Silent Aim'] = {
                 ['Visible'] = true,
-                ['Size'] = 55,
+                ['Size'] = 555,
                 ['FovMode'] = 'Circle',
             },
         },
@@ -44,10 +43,28 @@ getgenv().PradaV2 = {
         },
     },
 
+    ['Esp'] = {
+        ['Enabled'] = {
+            ['Name'] = false,
+        }
+    },
+
+    ['Extra'] = {
+        ['Keybinds'] = {
+            ['Esp Name'] = 'B',
+            ['Speed Walk'] = 'P',
+        },
+    },
+
     ['Safety'] = {
         ['Mod Protection'] = {
             ['Enabled'] = true,
-            ['Method'] = 'Notify' -- // Kick/Notify
+            ['Method'] = 'Notify'
+        },
+    },
+    ['Movement Enhancements'] = {
+        ['Speed'] = {
+            ['Value'] = 5,
         },
     },
 }
