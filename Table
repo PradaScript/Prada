@@ -79,6 +79,7 @@ getgenv().PradaV2 = {
     },
     
     ['Movement Enhancements'] = {
+        ['Enabled'] = false,  -- // if you would like to lower ur risk of getting banned, set this to false.
         ['Speed'] = {
             ['Value'] = 5,
         },
