@@ -1,36 +1,45 @@
 getgenv().PradaV2 = {
     ['Key'] = "",
-    
+
+    ['Extra'] = {
+        ['Keybinds'] = {
+            ['Esp Name'] = 'B',
+            ['Speed Walk'] = 'P',
+            ['Inventory'] = 'Y',
+        },
+    },
+
     ['Triggerbot'] = {
         ['Enabled'] = true,
         ['Delay'] = 0.01,
         ['FOV'] = {
             ['Visible'] = false,
-            ['Size'] = 555,
+            ['Size'] = 55,
             ['FovMode'] = 'FOV', -- Direct/FOV
         },
         ['Extra'] = {
             ['KnifeBlacklist'] = true,
-            ['Option'] = 'Hold',
+            ['Option'] = 'Hold', -- Hold/Always
             ['Key'] = 'V',
-            ['UseMethod'] = 'Mouse'
+            ['UseMethod'] = 'Mouse' -- Mouse/Weapon
         },
     },
 
     ['Silent'] = {
         ['Enabled'] = true,
         ['Mode'] = 'FOV',
+        ['Prediction'] = { -- Mainly for offbrand da hoods
+            ['Enabled'] = false,
+            ['Multiplier'] = 0.143,
+        },
         ['NearestCursorPoint'] = {
             ['Enabled'] = true,
             ['Mode'] = 'Default',
         },
-        ['Extra'] = {
-            ['VisCheck'] = true
-        },
         ['FOV'] = {
             ['Silent Aim'] = {
                 ['Visible'] = true,
-                ['Size'] = 555,
+                ['Size'] = 55,
                 ['FovMode'] = 'Circle',
             },
         },
@@ -42,6 +51,11 @@ getgenv().PradaV2 = {
                 ['Z'] = 5,
             },
         },
+        ['AntiCurve'] = { 
+            ['Enabled'] = false,
+                ['X'] = 25, -- // X turn between your mouse and the player.
+                ['Y'] = 10, -- // Y turn between your mouse and the player.
+        },
     },
 
     ['Esp'] = {
@@ -50,41 +64,31 @@ getgenv().PradaV2 = {
         }
     },
 
-    ['Extra'] = {
-        ['Keybinds'] = {
-            ['Esp Name'] = 'B',
-            ['Speed Walk'] = 'P',
-        },
-    },
-
-    ['Safety'] = {
-        ['Mod Protection'] = {
-            ['Enabled'] = true,
-            ['Method'] = 'Notify'
-        },
-    },
-
-	['Weapon Modifications'] = {
-		['Spread Modifications'] = {
-			['Enabled'] = true,
-
-			['[Double-Barrel SG]'] = {
-				['Multiplier'] = 0.1
-			},
-
-			['[TacticalShotgun]'] = {
-				['Multiplier'] = 0.1
-            },
-        },
-    },
-    
     ['Movement Enhancements'] = {
-        ['Enabled'] = false,  -- // if you would like to lower ur risk of getting banned, set this to false.
-        ['Speed'] = {
-            ['Value'] = 5,
+        ['Enabled'] = true,
+            ['Speed'] = {
+            ['Value'] = 50,
+        },
+    },
+
+    ['Velocity Calculation'] = {
+        ['Enabled'] = true,
+        ['Magnitude'] = 50,
+    },
+
+    ['Weapon Modifications'] = {
+        ['Spread Modifications'] = {
+            ['Enabled'] = true,
+
+            ['[Double-Barrel SG]'] = {
+                ['Multiplier'] = 0.1
+            },
+            
+            ['[TacticalShotgun]'] = {
+                ['Multiplier'] = 0.1
+            },
         },
     },
 }
 
---
-loadstring(game:HttpGet("https://pastebin.com/raw/6589dgW5"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ea989240890271f70fdd7b5b076294c.lua"))()
