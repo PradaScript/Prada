@@ -1,3 +1,12 @@
+if not LPH_OBFUSCATED then
+	LPH_JIT_MAX = function(...)
+		return (...)
+	end;
+	LPH_NO_VIRTUALIZE = function(...)
+		return (...)
+	end;
+end;
+
 getgenv().PradaV2 = {
     ['Key'] = "",
 
@@ -5,7 +14,7 @@ getgenv().PradaV2 = {
         ['Keybinds'] = {
             ['Esp Name'] = 'B',
             ['Speed Walk'] = 'P',
-            ['Inventory'] = 'Y',
+            ['Spread Modifier'] = 'C', -- // Toggles off and on you're spread 
         },
     },
 
@@ -14,14 +23,14 @@ getgenv().PradaV2 = {
         ['Delay'] = 0.01,
         ['FOV'] = {
             ['Visible'] = false,
-            ['Size'] = 55,
+            ['Size'] = 35,
             ['FovMode'] = 'FOV', -- Direct/FOV
         },
         ['Extra'] = {
             ['KnifeBlacklist'] = true,
             ['Option'] = 'Hold', -- Hold/Always
             ['Key'] = 'V',
-            ['UseMethod'] = 'Mouse' -- Mouse/Weapon
+            ['UseMethod'] = 'Weapon' -- Mouse/Weapon
         },
     },
 
@@ -30,7 +39,7 @@ getgenv().PradaV2 = {
         ['Mode'] = 'FOV',
         ['Prediction'] = { -- Mainly for offbrand da hoods
             ['Enabled'] = false,
-            ['Multiplier'] = 0.143,
+            ['Multiplier'] = 0,
         },
         ['NearestCursorPoint'] = {
             ['Enabled'] = true,
@@ -39,16 +48,16 @@ getgenv().PradaV2 = {
         ['FOV'] = {
             ['Silent Aim'] = {
                 ['Visible'] = true,
-                ['Size'] = 55,
+                ['Size'] = 20,
                 ['FovMode'] = 'Circle',
             },
         },
         ['Thick Bullet'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 5,
-                ['Y'] = 5,
-                ['Z'] = 5,
+                ['X'] = 4,
+                ['Y'] = 6,
+                ['Z'] = 3,
             },
         },
         ['AntiCurve'] = { 
@@ -81,7 +90,7 @@ getgenv().PradaV2 = {
             ['Enabled'] = true,
 
             ['[Double-Barrel SG]'] = {
-                ['Multiplier'] = 0.1
+                ['Multiplier'] = 0
             },
             
             ['[TacticalShotgun]'] = {
