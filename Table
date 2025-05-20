@@ -1,11 +1,4 @@
-if not LPH_OBFUSCATED then
-	LPH_JIT_MAX = function(...)
-		return (...)
-	end;
-	LPH_NO_VIRTUALIZE = function(...)
-		return (...)
-	end;
-end;
+
 
 getgenv().PradaV2 = {
     ['Key'] = "",
@@ -90,11 +83,11 @@ getgenv().PradaV2 = {
             ['Enabled'] = true,
 
             ['[Double-Barrel SG]'] = {
-                ['Multiplier'] = 0
+                ['Multiplier'] = 1
             },
             
             ['[TacticalShotgun]'] = {
-                ['Multiplier'] = 0.1
+                ['Multiplier'] = 1
             },
         },
     },
