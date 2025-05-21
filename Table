@@ -91,4 +91,4 @@ getgenv().PradaV2 = {
     },
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ea989240890271f70fdd7b5b076294c.lua"))()
+script_key=getgenv().PradaV2['Key']; loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5ea989240890271f70fdd7b5b076294c.lua"))()
